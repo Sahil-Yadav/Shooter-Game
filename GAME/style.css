@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: black;
+}
+
+canvas {
+  border: 1px solid black;
+}
+
+.score {
+  position: fixed;
+  z-index: 100;
+  color: white;
+  padding: 10px;
+  letter-spacing: 1px;
+  font-size: 14px;
+  pointer-events: none;
+  user-select: none;
+}
+
+.score .score-number {
+  padding-left: 5px;
+}
+
+.end-game {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: white;
+  padding: 20px 30px;
+  visibility: visible;
+  pointer-events: all;
+}
+
+.hide {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.end-game h1 {
+  font-weight: bold;
+}
+
+.end-game p {
+  margin-bottom: 10px;
+}
+
+.end-game .start-game-btn {
+  background-color: rgb(32, 114, 202);
+  color: white;
+  padding: 10px 150px;
+  border-radius: 50px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 450px) {
+  .end-game {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: white;
+    padding: 10px 20px;
+    visibility: visible;
+    pointer-events: all;
+    font-size: 16px;
+  }
+
+  .hide {
+    visibility: hidden;
+    pointer-events: none;
+    font-size: 16px;
+  }
+
+  .end-game h1 {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .end-game p {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+
+  .end-game .start-game-btn {
+    background-color: rgb(32, 114, 202);
+    color: white;
+    padding: 5px 80px;
+    border-radius: 50px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;
+  }
+}
